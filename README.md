@@ -4,6 +4,8 @@
   - docker-compose build
   - docker-compose up airflow-init
   - docker-compose up -d
+  
+  Remark: If it fails, add two empty directories: logs and plugins
 
 2. Add connection in Airflow:
 
