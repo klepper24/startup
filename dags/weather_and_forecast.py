@@ -44,7 +44,7 @@ cities = { 'Białystok': [23.15, 53.1333],
            'Wrocław': [17.03, 51.1],
            'Zielona Góra': [15.5064, 51.9355]
            }
-appid = api_key = Variable.get("api_key")
+appid = Variable.get("api_key")
 units = 'metric'
  
 @dag(
