@@ -101,7 +101,7 @@ def saveWeatherAndForecast():
                                             'main.pressure': 'pressure', 'main.humidity': 'humidity', 'dt': 'timestamp',
                                             'sys.sunrise': 'sunrise', 'sys.sunset': 'sunset',
                                             'name': 'city'})
-                    df = df.apply(lambda x: datetime.fromtimestamp(int(x)) if x.name in ['timestamp', 'sunrise', 'sunset'] else x)
+                    df = df.apply(lambda x: datetime.fromtimestamp(int(x)).astimezone(to_zone) if x.name in ['timestamp', 'sunrise', 'sunset'] else x)
                     df['city'] = df['city'].str.replace('Voivodeship', '')
                     column_names = [
                         'weather_category',
