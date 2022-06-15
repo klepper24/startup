@@ -14,6 +14,11 @@
   - Connection Type: HTTP
   - Host: api.openweathermap.org/
 
-3. Turn on the toggle: ![image](https://user-images.githubusercontent.com/25270608/173842149-d90e7457-d12c-4d5a-8bc7-a64dfb570733.png)
+3. Add api_key as Variable:
+ ![image](https://user-images.githubusercontent.com/25270608/173863224-16f3b28f-edf1-467c-83c5-ca2d3aa2c2f5.png)
+ - Key: api_key
+ - Val: api_key from openweather.org
+
+5. Turn on the toggle: ![image](https://user-images.githubusercontent.com/25270608/173842149-d90e7457-d12c-4d5a-8bc7-a64dfb570733.png)
 
 And Voila
