@@ -15,7 +15,7 @@
   - Host: api.openweathermap.org/
 
 3. Add api_key as Variable:
- ![image](https://user-images.githubusercontent.com/25270608/173863224-16f3b28f-edf1-467c-83c5-ca2d3aa2c2f5.png)
+![image](https://user-images.githubusercontent.com/25270608/173864368-dbdf931a-1baa-4586-a02e-aec7db2a1b11.png)
  - Key: api_key
  - Val: api_key from openweather.org
 
