@@ -10,6 +10,7 @@ from airflow.decorators import dag, task
 from airflow.providers.http.sensors.http import HttpSensor
 from airflow.operators.http_operator import SimpleHttpOperator
 from airflow.operators.python_operator import PythonOperator
+from airflow.models import Variable
 
 import pandas as pd
 
@@ -43,9 +44,8 @@ cities = { 'Białystok': [23.15, 53.1333],
            'Wrocław': [17.03, 51.1],
            'Zielona Góra': [15.5064, 51.9355]
            }
-appid = '3d0f64c4cdec05c94384b0520ad5af0b'
+appid = api_key = Variable.get("api_key")
 units = 'metric'
-
  
 @dag(
 	dag_id='weather_and_forecast_collector', 
